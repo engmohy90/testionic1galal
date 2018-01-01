@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>mohy</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <!--<p>wellcome to our page</p>-->
+  <!--<label>type key</label>-->
+  <!--<input>-->
+  <!--<label>type value</label>-->
+  <!--<input>-->
+
+  <ion-label >type key </ion-label>
+  <ion-input style="background: red" type="text" [(ngModel)]="newkey"></ion-input>
+  <ion-label >type  value</ion-label>
+  <ion-input style="background: red" type="text" [(ngModel)]="newvalue"></ion-input>
+  <button ion-item (click)="savekey()">save</button>
+  <button ion-item (click)="getkey()">get</button>
+  <ion-label>{{sss}}</ion-label>
+</ion-content>
+
+
